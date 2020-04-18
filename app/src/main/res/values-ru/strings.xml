@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Magnetic anomaly</string>
+    <string name="pattern">‚‗‚</string>
+    <string name="saved">Сохранено</string>
+    <string name="completed">ЗАВЕРШЕНО</string>
+    <string name="deleting">Удалить запись?</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+    <string name="emptyListView">Похоже, записей нет</string>
+    <string name="measuring">Измерение…</string>
+    <string name="current_magnetic">Текущее значение</string>
+    <string name="medium_value">Среднее значение</string>
+    <string name="null_value">Данные отсутствуют</string>
+    <string name="placename">НАЗВАНИЕ МЕСТА</string>
+    <string name="magnetic_value">НАПРЯЖЕНИЕ ПОЛЯ</string>
+    <string name="coordinates">КООРДИНАТЫ</string>
+    <string name="Notmeter">Необходимо измерить</string>
+</resources>

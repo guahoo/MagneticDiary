@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PlaceLibraryActivity"
+    tools:showIn="@layout/activity_placename_library">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp"
+        android:background="@android:color/black">
+
+
+        <TextView
+            android:id="@+id/colId"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="Похоже, у вас нет ни одной записи"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

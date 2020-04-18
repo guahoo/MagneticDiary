@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog_layout_full">
+
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp">
+
+
+        <TextView
+            android:id="@+id/placeNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="НАЗВАНИЕ МЕСТА"
+            android:textColor="@color/colorToxic"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/placeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/placeNameLabel"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="#FFBCC0CE"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/magneticLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="НАПРЯЖЕНИЕ ПОЛЯ"
+            android:layout_below="@id/placeNameEditText"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorToxic"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/magneticFieldView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/magneticLabel"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/white"
+            android:textColorHint="#FFBCC0CE"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/coordinatesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/magneticFieldView"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/coordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="КООРДИНАТЫ"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorToxic"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/coordinatesNTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/labelN"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0"
+                    android:text="N"
+                    android:gravity="center"
+                    android:textColor="@color/colorToxic"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/latitudeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingStart="5dp"
+                    android:text="checking..."
+                    android:textSize="23sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/coordinatesETextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/labelE"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="E"
+                    android:textColor="@color/colorToxic"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/longitudeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="checking..."
+                    android:paddingStart="5dp"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notesLabelView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ПРИМЕЧАНИЯ"
+            android:textColor="@color/colorToxic"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/coordinatesLayout"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/placeNotesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notesLabelView"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:textColorHint="#FFBCC0CE"
+            android:textSize="23sp" />
+
+        <ImageButton
+            android:id="@+id/ok_Btn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/placeNotesEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_icon_ok_svg"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ProgressBar
+            android:id="@+id/loaderCitylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ok_Btn"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="@+id/ok_Btn"
+            android:progress="30"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

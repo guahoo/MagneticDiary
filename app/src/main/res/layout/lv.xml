@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PlaceLibraryActivity"
+    tools:showIn="@layout/activity_placename_library">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp"
+        android:background="@android:color/black">
+
+
+        <TextView
+            android:id="@+id/colId"
+            android:layout_width="20dp"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:text="1"
+            android:textColor="@color/colorToxic"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/colPlaceName"
+            android:text="Шушмор"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+
+            android:gravity="start|center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/colorToxic"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/colMagneticValue"
+            android:layout_width="wrap_content"
+            android:text="32.2121"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:paddingStart="5dp"
+            android:gravity="start|center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/colorToxic"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/colDate"
+            android:layout_width="0dp"
+            android:text="01.01.2020"
+            android:layout_height="55dp"
+            android:gravity="end|center_vertical"
+            android:textStyle="bold"
+            android:paddingEnd="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorToxic"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

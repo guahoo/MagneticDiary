@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Magnetic anomaly</string>
+    <string name="pattern">‚‗‚</string>
+    <string name="saved">Saved</string>
+    <string name="completed">COMPLETED</string>
+    <string name="deleting">Delete record?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="emptyListView">There are no entries.</string>
+    <string name="measuring">Measuring…</string>
+    <string name="current_magnetic">Present value</string>
+    <string name="medium_value">Medium value</string>
+    <string name="null_value">No data</string>
+    <string name="placename">NAME OF PLACE</string>
+    <string name="magnetic_value">FIELD VOLTAGE</string>
+    <string name="coordinates">COORDINATES</string>
+    <string name="Notmeter">Need to measure</string>
+    <string name="location_permision">Включите доступ к местоположению</string>
+</resources>
